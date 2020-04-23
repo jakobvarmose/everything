@@ -1,0 +1,18 @@
+{
+  "binary":    ["\b", "ABCDEFGH"],
+  "tagged1":   ["\b", 0, "2013-03-21T20:04:00Z"],
+  "tagged2":   ["\b", 1, 1363896240],
+  "simple":    ["\b", 0],
+  "undefined": ["\b", 23],
+  "escaped":   ["\b", "\babcdef"],
+}
+{
+  "binary":    "\bb64'ABCDEFGH'",
+  "tagged1":   "\b0(\"2013-03-21T20:04:00Z\")",
+  "tagged2":   "\b1(1363896240)",
+  "tagged3":   "\b1(\"\\b2(3)\")",
+  "simple":    "\bsimple(0)",
+  "undefined": "\bsimple(23)",
+  "undefined": "\bundefined",
+  "escaped":   "\b\babcdef",
+}
